@@ -1,0 +1,11 @@
+.dataTables_wrapper .row 
+{
+	margin-left:0px;
+} 
+.value2 .icon-large,#big_stats i
+{
+	font-size:12px;
+	display:inline;
+	line-height:0px;
+	color:blue;
+}
