@@ -80,7 +80,7 @@
                                                <div class="input-prepend input-append">
                                                   <span class="add-on"><span class="icon-envelope"></span></span>
                                                   <input class="span2" name="frm_employeeEmail" type="text" autocomplete="off" required="required">
-                                                   <span class="add-on">@cognizant.com</span></span>
+                                                   <span class="add-on">@xyz.com</span></span>
                                                 </div>
                                               </div>	<!-- /controls -->			
 										</div> <!-- /control-group -->
