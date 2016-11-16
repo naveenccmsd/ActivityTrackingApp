@@ -3,7 +3,7 @@ package com.ccmsd.constants;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class config {
+public class Config {
 
 	public static String getMessage(String key){
 		Locale loc=Locale.getDefault();

@@ -10,11 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.ccmsd.constants.ErrorMessage;
+import com.ccmsd.constants.*;
 import com.ccmsd.dao.RegisterDAO;
 import com.ccmsd.exception.ManualException;
 import com.ccmsd.vo.EmployeeVO;
-
 public class RegisterController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -66,13 +65,13 @@ public class RegisterController extends HttpServlet {
 			throw new ManualException(ErrorMessage.getMessage("120"));
 		}
 		String valEmail=request.getParameter("frm_employeeEmail");
-		if(valEmail.indexOf("@cognizant.com")>0)
+		if(valEmail.indexOf("@")>0)
 		{
 			empVO.setEmployeeEmail(valEmail);
 		}
 		else
 		{
-			empVO.setEmployeeEmail(valEmail+"@cognizant.com");
+			empVO.setEmployeeEmail(valEmail+Config.getMessage("mailSuffix"));
 		}
 		empVO.setEmployeePassword(request.getParameter("frm_employeePassword"));
 		empVO.setEmployeeName(request.getParameter("frm_employeeName"));

@@ -74,7 +74,7 @@ res.next();res1.next();
 						</div>
 						<!-- /widget-header -->
 						<div class="widget-content" style="padding:5%">
-							<form action="mailto:<%=com.ccmsd.constants.config.getMessage("adminEmail") %>" enctype="text/plain" method="GET">
+							<form action="mailto:<%=com.ccmsd.constants.Config.getMessage("adminEmail") %>" enctype="text/plain" method="GET">
 							<label><b>Feedback Comments</b></label>
 							<input type="hidden" name="subject" value="Feedback" />
 							<textarea style="width:100%" name="body" rows="5"></textarea>

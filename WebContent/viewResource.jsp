@@ -109,8 +109,8 @@
 							                    <td><%=res.getInt("cts_EmployeeID") %> </td>
 							                    <td><%=res.getString("cts_EmployeeName") %></td>
 							                    <td><%=res.getString("cts_employeeEmail") %> </td>
-							                    <td><%=com.ccmsd.constants.config.getRole(res.getInt("cts_employeeRole")) %></td>
-							                    <td><%=com.ccmsd.constants.config.getStatus(res.getInt("cts_employeeStatus")) %> </td>
+							                    <td><%=com.ccmsd.constants.Config.getRole(res.getInt("cts_employeeRole")) %></td>
+							                    <td><%=com.ccmsd.constants.Config.getStatus(res.getInt("cts_employeeStatus")) %> </td>
 							                    <td><%=res.getInt("cts_ManagerID") %></td>
 							                    <td><%=res.getString("ManagerName") %></td>
 							                    <td class="td-actions" id="td-actions<%=res.getInt("cts_EmployeeID") %>">

@@ -53,6 +53,6 @@
 
 
 <div class="login-extra">
-	<a href="mailto:<%=com.ccmsd.constants.config.getMessage("adminEmail") %>?subject=Reset Application password">Reset Password</a>
+	<a href="mailto:<%=com.ccmsd.constants.Config.getMessage("adminEmail") %>?subject=Reset Application password">Reset Password</a>
 </div> <!-- /login-extra -->
 

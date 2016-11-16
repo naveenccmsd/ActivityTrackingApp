@@ -110,7 +110,7 @@ else
                   <tr>
                     <td><%=res1.getInt("cts_employeeID") %></td>
                     <td><%=res1.getString("cts_EmployeeName") %></td>
-                    <td><%=com.ccmsd.constants.config.getActivityStatus(res1.getInt("cts_assignmentStatus")) %></td>
+                    <td><%=com.ccmsd.constants.Config.getActivityStatus(res1.getInt("cts_assignmentStatus")) %></td>
                     <% if(editData) { %> 
                     <td class="td-actions" id="td-actions<%=res1.getInt("cts_employeeID") %>">
                     <a href="javascript:;" class="btn btn-small btn-success" onclick="completeAssignment(<%=res1.getInt("cts_taskID") %>,<%=res1.getInt("cts_employeeID") %>)"><i class="btn-icon-only icon-ok"> </i></a>

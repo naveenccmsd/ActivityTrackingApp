@@ -35,6 +35,7 @@ public class LoginDAO {
 		}
 		catch (ClassNotFoundException e) 
 		{
+			System.out.println(e);
 			throw new ManualException(ErrorMessage.getMessage("102"));
 		}
 		catch (SQLException e)
@@ -47,18 +48,5 @@ public class LoginDAO {
 		}
 		return empVO;
 	}
-	public static void main(String srgs[]) 
-	{
-		LoginDAO a=new LoginDAO();
-		EmployeeVO empVO_input=new EmployeeVO();
-		empVO_input.setEmployeeID(406649);
-		empVO_input.setEmployeePassword("ccmsd");
-		try {
-			EmployeeVO op=	a.verifyLogin(empVO_input);
-		} catch (ManualException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
+	
 }

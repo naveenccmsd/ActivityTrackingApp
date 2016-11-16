@@ -197,12 +197,12 @@ CREATE TABLE IF NOT EXISTS `cts_userlogin` (
 --
 
 INSERT INTO `cts_userlogin` (`cts_employeeID`, `cts_employeePassword`, `cts_employeeEmail`, `cts_employeeRole`, `cts_employeeStatus`) VALUES
-(406612, '1234', 'NaveenSample@cognizant.com', 0, 1),
-(406649, 'ccmsd', 'Naveenkumar.Palaninathan@cognizant.com', 9, 1),
-(406650, '1234', 'Sharath@cognizant.com', 0, 1),
-(406651, '1234', 'Sudharsan@cognizant.com', 0, 0),
-(406652, '1234', 'Maris@cognizant.com', 1, 1),
-(406653, '1234', 'Joffy@cognizant.com', 1, 0);
+(406612, '1234', 'NaveenSample@xyz.com', 0, 1),
+(406649, 'ccmsd', 'Naveenkumar.Palaninathan@xyz.com', 9, 1),
+(406650, '1234', 'Sharath@xyz.com', 0, 1),
+(406651, '1234', 'Sudharsan@xyz.com', 0, 0),
+(406652, '1234', 'Maris@xyz.com', 1, 1),
+(406653, '1234', 'Joffy@xyz.com', 1, 0);
 
 --
 -- Indexes for dumped tables

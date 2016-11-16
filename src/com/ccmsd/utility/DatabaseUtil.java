@@ -7,6 +7,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+import com.ccmsd.dao.LoginDAO;
+import com.ccmsd.exception.ManualException;
+import com.ccmsd.vo.EmployeeVO;
+
 public class DatabaseUtil {
 
 	private static Connection connection = null;
@@ -22,5 +26,20 @@ public class DatabaseUtil {
 		Class.forName(driver);
 		connection = DriverManager.getConnection(url, user, password);
 		return connection;
+	}
+	public static void main(String srgs[]) throws ClassNotFoundException, IOException, SQLException 
+	{
+		Connection conn=DatabaseUtil.getConnection();
+		LoginDAO a=new LoginDAO();
+		EmployeeVO empVO_input=new EmployeeVO();
+		empVO_input.setEmployeeID(406649);
+		empVO_input.setEmployeePassword("ccmsd");
+		try {
+			EmployeeVO op=	a.verifyLogin(empVO_input);
+		} catch (ManualException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 }

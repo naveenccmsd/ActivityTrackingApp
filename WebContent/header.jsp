@@ -41,7 +41,7 @@
 					</li>
 					
 					<li class="">						
-						<a href="mailto:<%=com.ccmsd.constants.config.getMessage("adminEmail") %>?subject=Issue with Activity tracking App" class="">
+						<a href="mailto:<%=com.ccmsd.constants.Config.getMessage("adminEmail") %>?subject=Issue with Activity tracking App" class="">
 							<i class="icon-chevron-left"></i>
 							Report issue
 						</a>
